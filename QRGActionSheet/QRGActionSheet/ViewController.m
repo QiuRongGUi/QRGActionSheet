@@ -11,24 +11,11 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-/** <#name#>*/
-
-//@property (nonatomic,strong) QRGActionSheetView  *QRGView;
 
 @end
 
 @implementation ViewController
 
-
-//- (QRGActionSheetView *)QRGView{
-//    if(!_QRGView){
-//        QRGActionSheetView  *aView = [[QRGActionSheetView alloc] initWithFrame:self.view.bounds];
-//        [self.view addSubview:aView];
-//        _QRGView = aView;
-//
-//    }
-//    return _QRGView;
-//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -43,6 +30,7 @@
     [but addTarget:self action:@selector(clike:) forControlEvents:UIControlEventTouchUpInside];
     [but setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [self.view addSubview:but];
+
     
 }
 
@@ -51,8 +39,8 @@
     NSMutableArray *data = [NSMutableArray array];
     
     
-    for(int i = 0;i < 3;i ++){
-        [data addObject:[NSString stringWithFormat:@"%d",i]];
+    for(int i = 0;i < 5;i ++){
+        [data addObject:[NSString stringWithFormat:@"test %d",i]];
     }
     
     QRGActionSheetView  *QRGView = [[QRGActionSheetView alloc] initWithFrame:self.view.bounds];
@@ -62,10 +50,6 @@
     QRGView.data = [data mutableCopy];
     
     
-}
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 

@@ -7,9 +7,12 @@
 //
 
 #import "QRGButtonTableViewCell.h"
+#import "QRGButton.h"
+#import "QRGActionModel.h"
 
 @interface QRGButtonTableViewCell  ()
 /** */
+@property (nonatomic,weak) UIButton  *actionBut;
 
 @end
 @implementation QRGButtonTableViewCell
@@ -19,11 +22,9 @@
     if(self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]){
         
         
-        UIButton *but = [UIButton buttonWithType:UIButtonTypeCustom];
-        but.imageView.contentMode = UIViewContentModeCenter;
+        QRGButton *but = [QRGButton buttonWithType:UIButtonTypeCustom];
         but.frame = CGRectMake(0, 0, self.contentView.frame.size.width, 44);
-        but.backgroundColor = [UIColor whiteColor];
-        [but setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [but setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [but addTarget:self action:@selector(clike:) forControlEvents:UIControlEventTouchUpInside];
         [self.contentView addSubview:but];
         
@@ -35,23 +36,19 @@
 }
 - (void)clike:(UIButton *)sends{
     
-    NSLog(@"%ld--tag",sends.tag);
-    
     if([self.delegate respondsToSelector:@selector(QRGButtonTableViewCellClikeButtonWithIndex:)]){
         
         [self.delegate QRGButtonTableViewCellClikeButtonWithIndex:sends.tag];
     }
     
 }
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
+- (void)setMod:(QRGActionModel *)mod{
+    
+    _mod = mod;
+    
+    self.actionBut.selected = mod.selected;
+    self.actionBut.tag = mod.index;
+    [self.actionBut setTitle:mod.actionTitle forState:UIControlStateNormal];
+    
 }
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
-
 @end

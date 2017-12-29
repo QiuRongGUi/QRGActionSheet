@@ -17,6 +17,9 @@
 		9713A2AA1FF4F02600108D94 /* QRGActionSheetUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9713A2A91FF4F02600108D94 /* QRGActionSheetUITests.m */; };
 		9713A2B91FF4F0F500108D94 /* QRGActionSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9713A2B81FF4F0F500108D94 /* QRGActionSheetView.m */; };
 		9713A2BC1FF4F37700108D94 /* QRGButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9713A2BB1FF4F37700108D94 /* QRGButtonTableViewCell.m */; };
+		9713A2BF1FF545B600108D94 /* QRGButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9713A2BE1FF545B600108D94 /* QRGButton.m */; };
+		97F5F6501FF5D13A00B816CC /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F5F64F1FF5D13A00B816CC /* UIView+Frame.m */; };
+		97F5F6531FF5D8D300B816CC /* QRGActionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F5F6521FF5D8D300B816CC /* QRGActionModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,12 @@
 		9713A2B81FF4F0F500108D94 /* QRGActionSheetView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRGActionSheetView.m; sourceTree = "<group>"; };
 		9713A2BA1FF4F37700108D94 /* QRGButtonTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRGButtonTableViewCell.h; sourceTree = "<group>"; };
 		9713A2BB1FF4F37700108D94 /* QRGButtonTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRGButtonTableViewCell.m; sourceTree = "<group>"; };
+		9713A2BD1FF545B600108D94 /* QRGButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRGButton.h; sourceTree = "<group>"; };
+		9713A2BE1FF545B600108D94 /* QRGButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRGButton.m; sourceTree = "<group>"; };
+		97F5F64E1FF5D13A00B816CC /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		97F5F64F1FF5D13A00B816CC /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		97F5F6511FF5D8D300B816CC /* QRGActionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRGActionModel.h; sourceTree = "<group>"; };
+		97F5F6521FF5D8D300B816CC /* QRGActionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRGActionModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +116,14 @@
 		9713A2841FF4F02600108D94 /* QRGActionSheet */ = {
 			isa = PBXGroup;
 			children = (
+				97F5F64E1FF5D13A00B816CC /* UIView+Frame.h */,
+				97F5F64F1FF5D13A00B816CC /* UIView+Frame.m */,
 				9713A2851FF4F02600108D94 /* AppDelegate.h */,
 				9713A2861FF4F02600108D94 /* AppDelegate.m */,
+				9713A2BD1FF545B600108D94 /* QRGButton.h */,
+				9713A2BE1FF545B600108D94 /* QRGButton.m */,
+				97F5F6511FF5D8D300B816CC /* QRGActionModel.h */,
+				97F5F6521FF5D8D300B816CC /* QRGActionModel.m */,
 				9713A2B71FF4F0F500108D94 /* QRGActionSheetView.h */,
 				9713A2B81FF4F0F500108D94 /* QRGActionSheetView.m */,
 				9713A2BA1FF4F37700108D94 /* QRGButtonTableViewCell.h */,
@@ -277,6 +292,9 @@
 			files = (
 				9713A28A1FF4F02600108D94 /* ViewController.m in Sources */,
 				9713A2BC1FF4F37700108D94 /* QRGButtonTableViewCell.m in Sources */,
+				9713A2BF1FF545B600108D94 /* QRGButton.m in Sources */,
+				97F5F6501FF5D13A00B816CC /* UIView+Frame.m in Sources */,
+				97F5F6531FF5D8D300B816CC /* QRGActionModel.m in Sources */,
 				9713A2951FF4F02600108D94 /* main.m in Sources */,
 				9713A2871FF4F02600108D94 /* AppDelegate.m in Sources */,
 				9713A2B91FF4F0F500108D94 /* QRGActionSheetView.m in Sources */,

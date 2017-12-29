@@ -1,0 +1,13 @@
+//
+//  QRGActionModel.m
+//  QRGActionSheet
+//
+//  Created by 邱荣贵 on 2017/12/29.
+//  Copyright © 2017年 邱久. All rights reserved.
+//
+
+#import "QRGActionModel.h"
+
+@implementation QRGActionModel
+
+@end

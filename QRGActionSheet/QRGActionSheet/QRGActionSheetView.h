@@ -10,10 +10,58 @@
 
 @interface QRGActionSheetView : UIView
 
-/** 莫比*/
+/** */
 @property (nonatomic,strong) NSArray *data;
+
+///**
+// 标题颜色
+// */
+//@property (nonatomic,strong) UIColor *titleColor;
+//
+///**
+// 标题字体
+// */
+//@property (nonatomic,strong) UIFont *titleFont;
+
+///**
+// 副标题颜色
+// */
+//@property (nonatomic,assign) UIColor *subtitleColor;
+//
+///**
+// 副标题字体
+// */
+//@property (nonatomic,strong) UIFont *subtitleFont;;
+
+///**
+// 副标题背景色
+// */
+//@property (nonatomic,strong) UIColor *subtitlebgColor;
+//
+///**
+// 标题颜色
+// */
+//@property (nonatomic,strong) UIColor *titlebgColor;
+//
+///**
+// 取消标题按钮颜色
+// */
+//@property (nonatomic,strong) UIColor *canclebgColor;
+//
+///**
+// 标题栏高度
+// */
+//@property (nonatomic,assign) CGFloat titleHeight;
+//
+//
+///**
+// 取消按钮高度
+// */
+//@property (nonatomic,assign) CGFloat cancleHeight;
+//
 
 - (void)show;
 
-- (void)hidden;
+- (void)dismiss;
+
 @end

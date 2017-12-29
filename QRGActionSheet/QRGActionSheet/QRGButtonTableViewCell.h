@@ -14,10 +14,12 @@
 
 @end
 
+@class QRGActionModel;
+
 @interface QRGButtonTableViewCell : UITableViewCell
 
-@property (nonatomic,weak) UIButton  *actionBut;
-
+/** <#name#>*/
+@property (nonatomic,strong) QRGActionModel  *mod;
 /** <#name#>*/
 @property (nonatomic,weak) id<QRGButtonTableViewCellDelegate> delegate;
 
